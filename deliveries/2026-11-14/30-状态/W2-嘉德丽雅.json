@@ -1,0 +1,87 @@
+{
+  "id": "W2-嘉德丽雅",
+  "status": "revision_submitted",
+  "attempt": 1,
+  "inputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\10-任务卡\\首批-W2-嘉德丽雅.md",
+      "sha256": "ea289d715408dca526f42da1aa27809380676d28057531ffc963b2db01e2df9e"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\90-日志\\证据包\\嘉德丽雅.md",
+      "sha256": "9d495cae1634eaedce2f68be2e7993bea9633acffecd6e56978084b966be746f"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\资料库-新\\10_原本\\诡秘之主-UTF8.txt",
+      "sha256": "4deac8d95fe300415f5210b6e2eb0511f47d30dce948ff93dba65d5e7dedf562"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\20-产出\\W2\\嘉德丽雅-人物书.md",
+      "lines": 216,
+      "chars": 18200,
+      "sha256": "cbc01c63c7487efdcf1f578fbeb6bd7971da0428117ba7934e3a60f1f36b8155"
+    }
+  ],
+  "reports": [
+    {
+      "path": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W2-嘉德丽雅.md",
+      "sha256": "ca27a01a191cbd9831a0586d790599f5686b9e80df98eb0e254c7fc687ee587a",
+      "suggested_status": "needs_rework",
+      "at": "2026-11-14T17:40:30+08:00"
+    }
+  ],
+  "open_questions": [
+    "修订候选建议 verified；原件与原报告 needs_rework 保留；待用户确认，不视为已通过",
+    "C4 五问全部待裁定",
+    "保证等级：人工全量，脚本全量未做"
+  ],
+  "updated_at": "2026-11-14T17:53:25+08:00",
+  "rework": {
+    "authorized": "证据定位返工（用户 2026-11-14 17:38 授权按完整分报告自动排返工）",
+    "attempt_planned": 2,
+    "card": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/10-任务卡/首批-W2-嘉德丽雅-返工-证据定位.md",
+    "revision_dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W2-嘉德丽雅-修订-20261114/",
+    "keep_original_outputs": true,
+    "items_count": "21 A + 1 C2"
+  },
+  "revision": {
+    "dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W2-嘉德丽雅-修订-20261114/",
+    "prior_suggested_status": "needs_rework",
+    "originals_unchanged": true,
+    "queued_for": "独立复核已完成（建议 verified，待用户确认）",
+    "files": [
+      {
+        "path": ".../嘉德丽雅-人物书.md",
+        "sha256": "2fb060aaca736bdb74d0f36de0ae6150e933b6013c196e92584c176a23e86a6e",
+        "lines": 216,
+        "bytes": 18399,
+        "changed": true
+      },
+      {
+        "path": ".../修订说明.md",
+        "sha256": "0e261331ad1dc2c98eb304d508cf9cf67dac6d6c7195009176ca07667d9b0de7",
+        "bytes": 19555,
+        "changed": true
+      }
+    ],
+    "integrator_filecheck_at": "2026-11-14T17:45:45+08:00",
+    "integrator_note": "整合只核文件存在、哈希、原件未改；这不是独立验收，不记为 verified。"
+  },
+  "authorization": {
+    "standing_scope": "2026-11-14-云端执行补充-本轮范围.md",
+    "authorized_at": "2026-11-14T17:51:11+08:00"
+  },
+  "revision_review": {
+    "report": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W2-嘉德丽雅-修订复核.md",
+    "sha256": "aad3f92f014f87c4314b8664d9476c99ab1a686296a701ffc34cdc6cb47bacdf",
+    "lines": 164,
+    "bytes": 14026,
+    "suggested_status_revision_only": "verified",
+    "originals_and_original_report": "needs_rework",
+    "user_confirmed": false,
+    "c4_still_pending": true,
+    "registered_at": "2026-11-14T17:53:25+08:00"
+  }
+}

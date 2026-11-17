@@ -1,0 +1,88 @@
+{
+  "id": "W2-贝尔纳黛",
+  "status": "revision_submitted",
+  "attempt": 1,
+  "inputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\10-任务卡\\首批-W2-贝尔纳黛.md",
+      "sha256": "77ff1c143eecac969b7089ab5c5b6e7113656e3d982a64a1ebbe924d6c580714"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\90-日志\\证据包\\贝尔纳黛.md",
+      "sha256": "29570ba14f305b8034162415d4e7688b1c8a690d9b01903c4ac8db3e9c42a286"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\资料库-新\\10_原本\\诡秘之主-UTF8.txt",
+      "sha256": "4deac8d95fe300415f5210b6e2eb0511f47d30dce948ff93dba65d5e7dedf562"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\20-产出\\W2\\贝尔纳黛-人物书.md",
+      "lines": 223,
+      "chars": 19755,
+      "sha256": "f90b6548a1ced21b001bf472c3be47c4e5cb95bded4b09b5a9ff98c23fd292ea"
+    }
+  ],
+  "reports": [
+    {
+      "path": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W2-贝尔纳黛.md",
+      "sha256": "be02b7642900f6115f05172181c8702106f198c58e4792044003996498b2a0e7",
+      "suggested_status": "needs_rework",
+      "at": "2026-11-14T17:24:00+08:00"
+    }
+  ],
+  "open_questions": [
+    "修订候选经独立验收建议 verified（报告 sha256 d91b6a5898d7af7c030313f2b09ce773250841e193be902d89df01f377d67919）；原验收建议 needs_rework 保留；均待用户确认",
+    "C4 十问全部待裁定；欲望补写只改了证据行，仍待裁定",
+    "保证等级：人工核对，非脚本；脚本全量未做"
+  ],
+  "updated_at": "2026-11-14T17:42:07+08:00",
+  "rework": {
+    "authorized": "证据定位返工（用户 2026-11-14 17:29 授权，W1a 槽已释放，直接派发）",
+    "attempt_planned": 2,
+    "card": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/10-任务卡/首批-W2-贝尔纳黛-返工-证据定位.md",
+    "revision_dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W2-贝尔纳黛-修订-20261114/",
+    "keep_original_outputs": true,
+    "count_口径": "可证问题 5 条 = 4 处 A 类定位问题 + 1 处 C4 证据行不准；格式项不计",
+    "items": [
+      "A6 原本:L23241 查拉图恭贺与预言证据错位（内容在 L23245、L23248）",
+      "A4 原本:L58618 呓语出处应在 L58614",
+      "A4 原本:L47944 「海王」须补或改至 L47946",
+      "A6 原本:L64280 地点与消失超出该行（L64281、L64282）",
+      "C4 原本:L59400 欲望补写证据行应改为 L59399"
+    ]
+  },
+  "revision": {
+    "dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W2-贝尔纳黛-修订-20261114/",
+    "prior_suggested_status": "needs_rework",
+    "originals_unchanged": true,
+    "queued_for": "独立验收复核（排在 W1a 修订复核之后）",
+    "files": [
+      {
+        "path": ".../20-产出/W2-贝尔纳黛-修订-20261114/贝尔纳黛-人物书.md",
+        "sha256": "54b872a00f8a5f2ee21bbca5860af5dbd1b6b2b74e857d452645f963608e67f0",
+        "lines": 223,
+        "bytes": 19920,
+        "changed": true
+      },
+      {
+        "path": ".../20-产出/W2-贝尔纳黛-修订-20261114/修订说明.md",
+        "sha256": "fde195236fa396c6c677f9885da3635b769d01a31b8f2e07a5e585322c795336",
+        "changed": true
+      }
+    ],
+    "integrator_filecheck_at": "2026-11-14T17:40:30+08:00",
+    "integrator_note": "整合只核文件存在、哈希、原件未改；这不是独立验收，不记为 verified。",
+    "re_review": {
+      "path": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W2-贝尔纳黛-修订复核.md",
+      "sha256": "d91b6a5898d7af7c030313f2b09ce773250841e193be902d89df01f377d67919",
+      "suggested_status": "verified",
+      "scope": "仅针对修订候选；原件与原报告 needs_rework 不动",
+      "items_closed": 5,
+      "at": "2026-11-14T17:42:07+08:00",
+      "note": "整合只核报告已落盘、哈希与登记一致、原件未改；不是用户确认通过。"
+    }
+  },
+  "revision_acceptance_suggested": "verified"
+}

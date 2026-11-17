@@ -1,0 +1,141 @@
+[
+  {
+    "file": "huoren-write-SKILL.md",
+    "repo": "laoguo2025/huoren-write",
+    "url": "https://github.com/laoguo2025/huoren-write/blob/main/SKILL.md",
+    "raw_url": "https://raw.githubusercontent.com/laoguo2025/huoren-write/main/SKILL.md",
+    "sha256": "11ebfbccf289b6c85b81bee1d2e8854877c3b97265d2a23f30c0fe20a96dbe11",
+    "bytes": 4628,
+    "status": "read"
+  },
+  {
+    "file": "huoren-write-character-voice.md",
+    "repo": "laoguo2025/huoren-write",
+    "url": "https://github.com/laoguo2025/huoren-write/blob/main/references/character-voice.md",
+    "raw_url": "https://raw.githubusercontent.com/laoguo2025/huoren-write/main/references/character-voice.md",
+    "sha256": "62dc9d8c51540335a66402631c5b84fc9581c4807fea44c655dcaac071783bb5",
+    "bytes": 3359,
+    "status": "read"
+  },
+  {
+    "file": "huoren-write-ai-patterns.md",
+    "repo": "laoguo2025/huoren-write",
+    "url": "https://github.com/laoguo2025/huoren-write/blob/main/references/ai-patterns.md",
+    "raw_url": "https://raw.githubusercontent.com/laoguo2025/huoren-write/main/references/ai-patterns.md",
+    "sha256": "506492e8744fe8c7e7c6dcc9480b86328167e3279243a793d4e94b80e32c2a18",
+    "bytes": 6307,
+    "status": "read"
+  },
+  {
+    "file": "huoren-write-examples.md",
+    "repo": "laoguo2025/huoren-write",
+    "url": "https://github.com/laoguo2025/huoren-write/blob/main/references/examples.md",
+    "raw_url": "https://raw.githubusercontent.com/laoguo2025/huoren-write/main/references/examples.md",
+    "sha256": "7da81be48c9df98e8ee475c200ebba50318a1b739a9254dab63da774a997f3b3",
+    "bytes": 3543,
+    "status": "read"
+  },
+  {
+    "file": "line-editing-SKILL.md",
+    "repo": "danjdewhurst/story-skills",
+    "url": "https://github.com/danjdewhurst/story-skills/blob/main/skills/line-editing/SKILL.md",
+    "raw_url": "https://raw.githubusercontent.com/danjdewhurst/story-skills/main/skills/line-editing/SKILL.md",
+    "sha256": "8461f352535778542ae3579b87118ca49f9dbc8a72ee1cd688f621d92ff9690f",
+    "bytes": 12674,
+    "status": "read"
+  },
+  {
+    "file": "chinese-grammar-proofreader-SKILL.md",
+    "repo": "orange4664/chinese-grammar-proofreader",
+    "url": "https://github.com/orange4664/chinese-grammar-proofreader/blob/main/SKILL.md",
+    "raw_url": "https://raw.githubusercontent.com/orange4664/chinese-grammar-proofreader/main/SKILL.md",
+    "sha256": "d8bbf7e22a7880953487cb9936af4fbcb8fcee62702280bf0627c8a073a5a818",
+    "bytes": 24466,
+    "status": "read"
+  },
+  {
+    "file": "zh-novel-polish-SKILL.md",
+    "repo": "chaserr/novel-craft",
+    "url": "https://github.com/chaserr/novel-craft/blob/main/skills/zh-novel-polish/SKILL.md",
+    "raw_url": "https://raw.githubusercontent.com/chaserr/novel-craft/main/skills/zh-novel-polish/SKILL.md",
+    "sha256": "7562fcd1f36a968042a0cfc873d551cb02b21d6fe9998ac2e70423a3f3d10dc6",
+    "bytes": 11761,
+    "status": "read"
+  },
+  {
+    "file": "human-writing-SKILL.md",
+    "repo": "KKKKhazix/human-writing",
+    "url": "https://github.com/KKKKhazix/human-writing/blob/main/human-writing/SKILL.md",
+    "raw_url": "https://raw.githubusercontent.com/KKKKhazix/human-writing/main/human-writing/SKILL.md",
+    "sha256": "a34f487817a5036a76ed181aea8f36ebe628a8bbb816abfdd628241d937cf626",
+    "bytes": 15596,
+    "status": "read"
+  },
+  {
+    "file": "human-writing-fiction.md",
+    "repo": "KKKKhazix/human-writing",
+    "url": "https://github.com/KKKKhazix/human-writing/blob/main/human-writing/references/fiction.md",
+    "raw_url": "https://raw.githubusercontent.com/KKKKhazix/human-writing/main/human-writing/references/fiction.md",
+    "sha256": "b4dabb416c68de19bc443d4afcedf88e28cb16260cf1764e179d6e45d5e76ffd",
+    "bytes": 5574,
+    "status": "read"
+  },
+  {
+    "file": "humanizer-zh-SKILL.md",
+    "repo": "op7418/humanizer-zh",
+    "url": "https://github.com/op7418/humanizer-zh/blob/main/SKILL.md",
+    "raw_url": "https://raw.githubusercontent.com/op7418/humanizer-zh/main/SKILL.md",
+    "sha256": "95627fd4437d886f98032ccc62d79136e6310f1fc04e354bb86431795ff206df",
+    "bytes": 20527,
+    "status": "read"
+  },
+  {
+    "file": "novel-humanize-SKILL.md",
+    "repo": "qi531416/novel-humanize",
+    "url": "https://github.com/qi531416/novel-humanize/blob/main/SKILL.md",
+    "raw_url": "https://raw.githubusercontent.com/qi531416/novel-humanize/main/SKILL.md",
+    "sha256": "8e5288efcf7cba429f85584c5d5eba74069f8499d632c90a068fc5e187a9f778",
+    "bytes": 5695,
+    "status": "read"
+  },
+  {
+    "file": "line-editing-checklist.md",
+    "url": "https://github.com/danjdewhurst/story-skills/blob/main/skills/line-editing/references/line-edit-checklist.md",
+    "raw_url": "https://raw.githubusercontent.com/danjdewhurst/story-skills/main/skills/line-editing/references/line-edit-checklist.md",
+    "sha256": "059ff5eda5c1d27807f01c7ed5b8ad173bb25d591186de7fa6f1a551e0cbf998",
+    "bytes": 4986,
+    "status": "read"
+  },
+  {
+    "file": "line-editing-read-aloud.md",
+    "url": "https://github.com/danjdewhurst/story-skills/blob/main/skills/line-editing/references/read-aloud-guide.md",
+    "raw_url": "https://raw.githubusercontent.com/danjdewhurst/story-skills/main/skills/line-editing/references/read-aloud-guide.md",
+    "sha256": "5cf2fe45c8c4119f97241fa14fdcced20dc531646a727522064dda69fb472289",
+    "bytes": 3367,
+    "status": "read"
+  },
+  {
+    "file": "huoren-write-human-texture.md",
+    "url": "https://github.com/laoguo2025/huoren-write/blob/main/references/human-texture.md",
+    "raw_url": "https://raw.githubusercontent.com/laoguo2025/huoren-write/main/references/human-texture.md",
+    "sha256": "b4dcc5d30aaab00f47840dba80aa6f265f2a5b5045b6f372a6158ac44f284fe1",
+    "bytes": 3086,
+    "status": "read"
+  },
+  {
+    "file": "huoren-write-format-preservation.md",
+    "url": "https://github.com/laoguo2025/huoren-write/blob/main/references/format-preservation.md",
+    "raw_url": "https://raw.githubusercontent.com/laoguo2025/huoren-write/main/references/format-preservation.md",
+    "sha256": "216a7cfe6cc77311f072c1cb65b0d057b6532dcb381301e9d51f16a94534dbf1",
+    "bytes": 1815,
+    "status": "read"
+  },
+  {
+    "file": "huoren-write-scoring-and-output.md",
+    "url": "https://github.com/laoguo2025/huoren-write/blob/main/references/scoring-and-output.md",
+    "raw_url": "https://raw.githubusercontent.com/laoguo2025/huoren-write/main/references/scoring-and-output.md",
+    "sha256": "1765cda79d10a45e46f1a930355adf1a4d5623d0ef121ed0367e55fa87e81307",
+    "bytes": 2570,
+    "status": "read"
+  }
+]

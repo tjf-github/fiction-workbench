@@ -1,0 +1,136 @@
+{
+  "id": "W2-特雷茜＋伊莲",
+  "status": "revision2_submitted",
+  "attempt": 1,
+  "inputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\10-任务卡\\首批-W2-特雷茜＋伊莲.md",
+      "sha256": "934083324bba7ad3f15498e8689edf1061c96a0e53f6548c926aa62f0a7d4cb9"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\90-日志\\证据包\\特雷茜＋伊莲.md",
+      "sha256": "b8d9389b58e1196783ad35bd98a7775651bf2b0924693b413e3470e35c74ea25"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\资料库-新\\10_原本\\诡秘之主-UTF8.txt",
+      "sha256": "4deac8d95fe300415f5210b6e2eb0511f47d30dce948ff93dba65d5e7dedf562"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\20-产出\\W2\\特雷茜＋伊莲-人物书.md",
+      "lines": 363,
+      "chars": 27621,
+      "sha256": "895eb8e4981ebde90fbd6c5186b0b2ae5276f8df33de1da163ebdb2b4b093995"
+    }
+  ],
+  "reports": [
+    {
+      "path": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W2-特雷茜＋伊莲.md",
+      "sha256": "03dc09e4ffc5573380fa5f82f19c871ba1e59d12a264d52b6892e2a7e65434c7",
+      "suggested_status": "needs_rework",
+      "at": "2026-11-14T17:40:30+08:00"
+    }
+  ],
+  "open_questions": [
+    "第二轮候选建议 verified；原件、第一份修订与前两份报告 needs_rework 保留；待用户确认，不视为已通过",
+    "C4 八问全部待裁定",
+    "保证等级：人工全量，脚本全量未做"
+  ],
+  "updated_at": "2026-11-14T18:14:10+08:00",
+  "rework": {
+    "authorized": "证据定位返工（用户 2026-11-14 17:38 授权按完整分报告自动排返工）",
+    "attempt_planned": 2,
+    "card": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/10-任务卡/首批-W2-特雷茜＋伊莲-返工-证据定位.md",
+    "revision_dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W2-特雷茜＋伊莲-修订-20261114/",
+    "keep_original_outputs": true,
+    "items_count": "27 A"
+  },
+  "revision": {
+    "dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W2-特雷茜＋伊莲-修订-20261114/",
+    "prior_suggested_status": "needs_rework",
+    "originals_unchanged": true,
+    "queued_for": "独立复核已完成（建议 needs_rework）；第 27 项返工2 已按改方法派发",
+    "files": [
+      {
+        "path": ".../特雷茜＋伊莲-人物书.md",
+        "sha256": "3f68f310d52f5d70598cb348e34e500aebcd666fd29f8afa9839b6457b0f1f97",
+        "lines": 386,
+        "bytes": 30980,
+        "changed": true
+      },
+      {
+        "path": ".../修订说明.md",
+        "sha256": "aeaba4cf9b876584d9c50ce5692b2149d9b9d20a7b029505650748e7ad31331b",
+        "bytes": 24491,
+        "changed": true
+      }
+    ],
+    "item_headings_in_notes": 27,
+    "integrator_filecheck_at": "2026-11-14T17:46:57+08:00",
+    "integrator_note": "整合只核文件存在、哈希、原件未改，以及说明已列出 27 处；这不是独立验收，不记为 verified。"
+  },
+  "authorization": {
+    "standing_scope": "2026-11-14-云端执行补充-本轮范围.md",
+    "authorized_at": "2026-11-14T17:51:11+08:00"
+  },
+  "revision_review": {
+    "report": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W2-特雷茜＋伊莲-修订复核.md",
+    "sha256": "5ed968d419eff214616523281d7fd0ed97ce84cd850115e9aca4d8e1a92e4443",
+    "lines": 199,
+    "bytes": 26077,
+    "suggested_status_revision_only": "needs_rework",
+    "originals_and_original_report": "needs_rework",
+    "closed_items": "1-26",
+    "open_item": "第 27 项拆出的 A6 伊莲 读书／收藏室（L51090,L51095）",
+    "user_confirmed": false,
+    "c4_still_pending": true,
+    "registered_at": "2026-11-14T17:59:40+08:00"
+  },
+  "rework2": {
+    "dispatched_at": "2026-11-14T18:00:34+08:00",
+    "method": "先列最小证据矩阵再落值；收藏室另条独立引 L51094；不确定则待核；不做相同泛化改写重试",
+    "card": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/10-任务卡/首批-W2-特雷茜＋伊莲-返工2-第27项.md",
+    "card_sha256": "c09c0b7cb1b4fa0301415ed6da2c4cbf1d8637f198570b7ff0923450e4268c7d",
+    "dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W2-特雷茜＋伊莲-修订2-20261114/",
+    "preserve": "第一份修订、两次报告与全部旧哈希，不覆盖",
+    "submitted_at": "2026-11-14T18:07:09+08:00",
+    "registered": "30-状态/W2-特雷茜＋伊莲-修订2登记-20261114.md",
+    "method_changed": true,
+    "files": [
+      {
+        "path": ".../证据矩阵.md",
+        "sha256": "de26965daddf0040d194037ac0a8da3c94e9258a6cec0c807c37f8d5485b2cb1",
+        "lines": 93,
+        "bytes": 9252
+      },
+      {
+        "path": ".../特雷茜＋伊莲-人物书.md",
+        "sha256": "531a86048d996e530878d9b3ddea21c96e1e475b2fe8c8bd9af13950c2f6454e",
+        "lines": 387,
+        "bytes": 31381
+      },
+      {
+        "path": ".../修订说明.md",
+        "sha256": "d269796a2a4b5fff894e1e4afe18dfb806f940f93efc2c0691ebef22a82475b9",
+        "lines": 55,
+        "bytes": 4463
+      }
+    ],
+    "first_revision_unchanged": true,
+    "queued_for": "独立复核已完成（第二轮候选建议 verified）；待用户确认",
+    "integrator_note": "整合只核文件存在、哈希、旧文件未覆盖，以及 diff 仅文首声明与第 27 项拆条；这不是独立验收，不记为 verified。"
+  },
+  "revision2_review": {
+    "report": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W2-特雷茜＋伊莲-修订2复核.md",
+    "sha256": "c4fd2d5580926f9da7252e48346b7ac266d9a4362976d6e84768ee8acbb9489c",
+    "lines": 100,
+    "bytes": 13326,
+    "suggested_status_revision2_only": "verified",
+    "originals_first_revision_and_prior_reports": "needs_rework",
+    "closed_item": "第 27 项（读书条主宾、收藏室另条并引 L51094、待核未猜、1–26 与 C4 未改、身份仍分开）",
+    "user_confirmed": false,
+    "c4_still_pending": true,
+    "registered_at": "2026-11-14T18:14:10+08:00"
+  }
+}

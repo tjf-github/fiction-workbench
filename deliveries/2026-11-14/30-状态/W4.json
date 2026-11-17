@@ -1,0 +1,198 @@
+{
+  "id": "W4",
+  "status": "revision2_submitted",
+  "attempt": 1,
+  "inputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\10-任务卡\\首批-W4-锚点复核.md",
+      "sha256": "2160bfa2e14ea8798f6a4c59e436000e08ae03c65551c7050408d8209256701c"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\资料库-新\\00_规则\\调子卡.md",
+      "sha256": "986f4c8fa0da23d0ab2d13bfed314a8a70ce60d8bad4aa5dd3433f925813bf8d"
+    }
+  ],
+  "outputs": [
+    {
+      "sha256": "515c9461114045f85415e1a42dbca650e942775fb3a8d0d7d24ab2afa68cfd26",
+      "chars": 12466,
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\20-产出\\W4\\锚点复核表.md",
+      "lines": 45
+    },
+    {
+      "sha256": "6f76c1a4e9e3620ce9d63bd4a91d77ae0cba4e758f8f127f546ca641cf9142ad",
+      "chars": 3166,
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\20-产出\\W4\\A段样本对照.md",
+      "lines": 26
+    }
+  ],
+  "reports": [
+    {
+      "path": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-W4验收/W4.md",
+      "sha256": "6c52040a35bd8f28818cf721bf4ccae44a80dd156723d1a48dde263866e7909c",
+      "suggested_status": "needs_rework",
+      "at": "2026-11-14T17:44:15+08:00"
+    }
+  ],
+  "open_questions": [
+    "原件、第一份修订与前两份报告 needs_rework 保留；第二轮候选建议 verified（报告 2a40c81d7738d6e14cc24c8454b5cc75aedec7394763d81584bcec5756cea70e）；对话#2 时间轴已按前后分标闭环；待用户确认，不视为已通过",
+    "权威源是否改规则、环境室内／船长室是否另开补包，仍待裁定",
+    "保证等级：人工核对，非脚本；脚本全量未做"
+  ],
+  "updated_at": "2026-11-14T18:22:50+08:00",
+  "rework": {
+    "authorized": "独立验收已支持 3 条建议改；按既定流程先记录修订方案，再生产另存候选，不改冻结源",
+    "plan": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/30-状态/W4-修订方案-20261114.md",
+    "plan_sha256": "f4f77c149b2be4c57988c9119a37c59fff37a0ef700ea617d3ab90b21cfd301d",
+    "card": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/10-任务卡/首批-W4-返工-修订候选.md",
+    "card_sha256": "bcf0f49d087634fed468bef4071e1019324103f7fc28434200aefa226c1ede4e",
+    "revision_dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W4-修订-20261114/",
+    "keep_original_outputs": true,
+    "frozen_sources_unchanged": true,
+    "queue": "空槽接上（原嘉德丽雅槽）；雪伦夫人仍排队；不新开第三件生产",
+    "items": [
+      "心理#1 人物相关性 需上下文→是",
+      "心理#2 人物相关性 需上下文→否",
+      "对话#2 句首与时间轴（另存候选）",
+      "对话#1 可拍摄与时间轴（另存候选）",
+      "心理#3 可拍摄与时间轴（另存候选）"
+    ],
+    "dispatched_at": "2026-11-14T17:45:45+08:00",
+    "outputs_expected": [
+      "锚点复核表.md",
+      "A段样本对照.md",
+      "候选-锚点修订副本.md",
+      "修订说明.md"
+    ]
+  },
+  "revision": {
+    "dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W4-修订-20261114/",
+    "prior_suggested_status": "needs_rework",
+    "originals_unchanged": true,
+    "frozen_sources_unchanged": true,
+    "tune_card_sha256": "986f4c8fa0da23d0ab2d13bfed314a8a70ce60d8bad4aa5dd3433f925813bf8d",
+    "queued_for": "独立复核已完成（建议 needs_rework）；对话#2 时间轴返工2 已按改方法派发",
+    "files": [
+      {
+        "path": "锚点复核表.md",
+        "sha256": "20ad34c6ae17c5e2f5d517d3ef2970b8f2ded0afea1e912bc82812de40ed936c",
+        "lines": 52,
+        "bytes": 15014,
+        "role": "报告修订候选"
+      },
+      {
+        "path": "A段样本对照.md",
+        "sha256": "cae9ec7a938db9b69f474f4415280dbf3bdfe5a22923c4351f959f7fd5ffdca5",
+        "lines": 29,
+        "bytes": 4071,
+        "role": "对照关系同原件，仅加说明头"
+      },
+      {
+        "path": "候选-锚点修订副本.md",
+        "sha256": "f279b4a12af3f9165bb02decfc427debeb52ed04610e1defbead233ad7714f3f",
+        "lines": 64,
+        "bytes": 6446,
+        "role": "来源候选副本"
+      },
+      {
+        "path": "修订说明.md",
+        "sha256": "9cbbd1acf5ba22e3c77d260884cce780c816d1e2220467e6074997d051634c0e",
+        "lines": 62,
+        "bytes": 5336,
+        "role": "说明"
+      }
+    ],
+    "plan_sha256_current": "f4f77c149b2be4c57988c9119a37c59fff37a0ef700ea617d3ab90b21cfd301d",
+    "plan_sha256_pre_addendum": "fbfb6eea48f47124f9ec52b056f2b95e9b5130a012fb1bad1e25757d3e877b07",
+    "integrator_filecheck_at": "2026-11-14T17:50:03+08:00",
+    "integrator_note": "整合只核文件存在、哈希、原件与冻结源未改；这不是独立验收，不记为 verified。独立复核须等用户授权后再派。"
+  },
+  "authorization": {
+    "standing_scope": "2026-11-14-云端执行补充-本轮范围.md",
+    "authorized_at": "2026-11-14T17:51:11+08:00"
+  },
+  "revision_review": {
+    "report": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-W4验收/W4-修订复核.md",
+    "sha256": "b2f4d2233462e4e3eb79ccd26785b53f8c1b23313308a8913c5d130932598f4d",
+    "lines": 119,
+    "bytes": 16168,
+    "suggested_status_revision_only": "needs_rework",
+    "originals_and_original_report": "needs_rework",
+    "closed_items": "心理#1、心理#2、对话#1、心理#3、对话#2句首",
+    "open_item": "对话#2 时间整条改为「回顾」，后半现场对话／动作不支持",
+    "frozen_sources_unchanged": true,
+    "user_confirmed": false,
+    "pending_rulings": [
+      "权威源规则",
+      "室内／船长室是否另开补包"
+    ],
+    "registered_at": "2026-11-14T18:11:13+08:00"
+  },
+  "rework2": {
+    "dispatched_at": "2026-11-14T18:11:13+08:00",
+    "method": "先列分段证据矩阵再落值；禁止再把时间整条改为「回顾」或「在场」；参照同轮已闭环的前后分标路径，不确定则待核；仍同类错误则隔离并报清",
+    "card": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/10-任务卡/首批-W4-返工2-对话2时间.md",
+    "card_sha256": "61745c3e61755a1055007b9ca5eb7f2a1ce8df64344461ae5f5cc7142edd96aa",
+    "dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W4-修订2-20261114/",
+    "preserve": "原件、第一份修订、两次报告、冻结源与全部旧哈希，不覆盖；不动其余已闭环项",
+    "submitted_at": "2026-11-14T18:15:05+08:00",
+    "registered": "30-状态/W4-修订2登记-20261114.md",
+    "method_changed": true,
+    "files": [
+      {
+        "path": ".../证据矩阵.md",
+        "sha256": "f8b72b5f1251c99ea588d52274f87fdea4d95cfe46d5372b0b8ea8179c7cd06d",
+        "lines": 35,
+        "bytes": 5341
+      },
+      {
+        "path": ".../锚点复核表.md",
+        "sha256": "76afd342c6ec80d5850b05ac865a4a8dbb7f3067056b1054befc6af248be70b9",
+        "lines": 53,
+        "bytes": 15966
+      },
+      {
+        "path": ".../候选-锚点修订副本.md",
+        "sha256": "e8fe1d3551cf2373722e36db730ed39b2e52341113b8973f244257c930fab7ad",
+        "lines": 66,
+        "bytes": 7687
+      },
+      {
+        "path": ".../A段样本对照.md",
+        "sha256": "064bc9c64adf7d2d9fc10822733e440655800cf566db7df4531d449c8f2e27e1",
+        "lines": 30,
+        "bytes": 4525
+      },
+      {
+        "path": ".../修订说明.md",
+        "sha256": "1030cd55b4811cefe17b319a4b133ba51085aaf52ac6354bbe8567aec19a72da",
+        "lines": 43,
+        "bytes": 4698
+      }
+    ],
+    "first_revision_unchanged": true,
+    "frozen_sources_unchanged": true,
+    "queued_for": "独立复核已完成（建议 verified，待用户确认）",
+    "integrator_note": "整合只核文件存在、哈希、旧文件与冻结源未覆盖，以及 diff 仅对话#2 时间轴相关行；这不是独立验收，不记为 verified。",
+    "review_dispatched_at": "2026-11-14T18:17:47+08:00",
+    "review_card": "10-任务卡/首批-验收-W4-修订2复核.md",
+    "review_card_sha256": "9a1a083387132086031a6a901378bad81bd18b72bdb568ca4a79a96a29bd0828"
+  },
+  "revision2_review": {
+    "report": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-W4验收/W4-修订2复核.md",
+    "sha256": "2a40c81d7738d6e14cc24c8454b5cc75aedec7394763d81584bcec5756cea70e",
+    "lines": 98,
+    "bytes": 15266,
+    "suggested_status_revision2_only": "verified",
+    "originals_first_revision_and_prior_reports": "needs_rework",
+    "closed_items": "对话#2 时间轴按前半回顾／后半在场分标已闭环；已闭环五项与 29 条、A 段 11 条未改坏",
+    "user_confirmed": false,
+    "pending_rulings": [
+      "权威源规则",
+      "室内／船长室是否另开补包"
+    ],
+    "frozen_sources_unchanged": true,
+    "registered_at": "2026-11-14T18:22:50+08:00",
+    "registration": "30-状态/W4-修订2复核登记-20261114.md"
+  }
+}

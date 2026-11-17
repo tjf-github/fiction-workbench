@@ -1,0 +1,140 @@
+{
+  "id": "W2-雪伦夫人",
+  "status": "revision2_submitted",
+  "attempt": 1,
+  "inputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\10-任务卡\\首批-W2-雪伦夫人.md",
+      "sha256": "017024089e8bf0b8105294b247b1da25c0f5e75726ed62b7095572acaaedf26c"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\90-日志\\证据包\\雪伦夫人.md",
+      "sha256": "6870378d7b01df45e1684a7aa3441b8b84d69f83be0199e49fa2e6f27d18c1d3"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\资料库-新\\10_原本\\诡秘之主-UTF8.txt",
+      "sha256": "4deac8d95fe300415f5210b6e2eb0511f47d30dce948ff93dba65d5e7dedf562"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\20-产出\\W2\\雪伦夫人-人物书.md",
+      "lines": 186,
+      "chars": 14570,
+      "sha256": "d50e4d78f50308f388a40542f722fdcd5493d9568654612c8c805daef891cfcb"
+    }
+  ],
+  "reports": [
+    {
+      "path": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W2-雪伦夫人.md",
+      "sha256": "b912e996b20e49e5bf36f6b5b769c10aba8d1a2db641f30e8b5709f95bdf733d",
+      "suggested_status": "needs_rework",
+      "at": "2026-11-14T17:40:30+08:00"
+    }
+  ],
+  "open_questions": [
+    "原件、第一份修订与前两份报告 needs_rework 保留；第二轮候选建议 verified（报告 19e1f31d4eaf8a3af0f75a01ce54c7e554275c993f96114bcfc166fdfecd4c12）；第 3、第 4 项已闭环；待用户确认，不视为已通过",
+    "C4 五问全部待裁定",
+    "保证等级：人工核对，非脚本；脚本全量未做"
+  ],
+  "updated_at": "2026-11-14T18:17:47+08:00",
+  "rework": {
+    "authorized": "证据定位返工（用户 2026-11-14 17:38 授权按完整分报告自动排返工）",
+    "attempt_planned": 2,
+    "card": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/10-任务卡/首批-W2-雪伦夫人-返工-证据定位.md",
+    "revision_dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W2-雪伦夫人-修订-20261114/",
+    "keep_original_outputs": true,
+    "items_count": "20 A",
+    "dispatched_at": "2026-11-14T17:46:57+08:00",
+    "card_sha256": "1e14ddcf4b5601201ae6923378276ad7d369fc58394cd7a569a33a4c4a639c07",
+    "queue": "空槽接上（原特雷茜＋伊莲槽）；与 W4 并行；不新开第三件生产"
+  },
+  "authorization": {
+    "standing_scope": "2026-11-14-云端执行补充-本轮范围.md",
+    "note": "修订复核已纳入持续授权；等生产交回登记后再派"
+  },
+  "revision": {
+    "dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W2-雪伦夫人-修订-20261114/",
+    "prior_suggested_status": "needs_rework",
+    "originals_unchanged": true,
+    "queued_for": "独立复核已完成（建议 needs_rework）；第 3、第 4 项返工2 已按改方法派发",
+    "files": [
+      {
+        "path": ".../雪伦夫人-人物书.md",
+        "sha256": "66fa251d175cd62fcf7dfaaf3ef87d8f84c6f2d30af2ffd93e1ef344fd14b33f",
+        "lines": 188,
+        "bytes": 16029,
+        "changed": true
+      },
+      {
+        "path": ".../修订说明.md",
+        "sha256": "018de2c87d039238492f99d519d08bfcf2d1f322bc9179753851bbbefcd69f48",
+        "bytes": 21721,
+        "changed": true
+      }
+    ],
+    "item_headings_in_notes": 20,
+    "integrator_filecheck_at": "2026-11-14T17:52:00+08:00",
+    "integrator_note": "整合只核文件存在、哈希、原件未改，以及说明已列出 20 处；这不是独立验收，不记为 verified。"
+  },
+  "revision_review": {
+    "report": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W2-雪伦夫人-修订复核.md",
+    "sha256": "a469eaa0c5de9bf5f13d10f28147d04658e3a4d05ceaf9e96cf17e8a25c0ce9c",
+    "lines": 165,
+    "bytes": 20167,
+    "suggested_status_revision_only": "needs_rework",
+    "originals_and_original_report": "needs_rework",
+    "closed_items": "1-2, 5-20",
+    "open_item": "第 3 项（L17668 自作主张问句未入证据 ID）；第 4 项（L17578 无照中明文）",
+    "user_confirmed": false,
+    "c4_still_pending": true,
+    "registered_at": "2026-11-14T18:07:09+08:00"
+  },
+  "rework2": {
+    "dispatched_at": "2026-11-14T18:07:09+08:00",
+    "method": "先列原子事实—原句所在行—能支持到哪一步的矩阵再落值；第 3 项补核 L17668 与引用 ID；第 4 项区分甩出／正面朝向／实际照中，无明文则收窄或待核，不推断结果；仍同类错误则隔离并报清，不反复改写凑通过",
+    "card": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/10-任务卡/首批-W2-雪伦夫人-返工2-第3和第4项.md",
+    "card_sha256": "8034109fe78ef32f9ec9f74deb9a4caa840811e95b4fcce2381c92f8e69cbc47",
+    "dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W2-雪伦夫人-修订2-20261114/",
+    "preserve": "原件、第一份修订、两次报告与全部旧哈希，不覆盖；不动其余 18 项和 C4",
+    "submitted_at": "2026-11-14T18:11:13+08:00",
+    "registered": "30-状态/W2-雪伦夫人-修订2登记-20261114.md",
+    "method_changed": true,
+    "files": [
+      {
+        "path": ".../证据矩阵.md",
+        "sha256": "7905762c8501d56080d09575b6c61b8861e45646dc97c5128b14a3ab59e6ee4c",
+        "lines": 63,
+        "bytes": 7829
+      },
+      {
+        "path": ".../雪伦夫人-人物书.md",
+        "sha256": "d6ee455d97be648e6e2957977b5da36e03f7459816f53759496f9e5c6814b1c8",
+        "lines": 188,
+        "bytes": 16146
+      },
+      {
+        "path": ".../修订说明.md",
+        "sha256": "8ae8838cd006cc78ba9bc3cda8e5ee3981430afc3ef3dc927d316aadfa2a2b96",
+        "lines": 33,
+        "bytes": 5294
+      }
+    ],
+    "first_revision_unchanged": true,
+    "queued_for": "独立复核已完成（建议 verified，待用户确认）",
+    "integrator_note": "整合只核文件存在、哈希、旧文件未覆盖，以及 diff 仅第 3、第 4 项两行；这不是独立验收，不记为 verified。"
+  },
+  "revision2_review": {
+    "report": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W2-雪伦夫人-修订2复核.md",
+    "sha256": "19e1f31d4eaf8a3af0f75a01ce54c7e554275c993f96114bcfc166fdfecd4c12",
+    "lines": 105,
+    "bytes": 17378,
+    "suggested_status_revision2_only": "verified",
+    "originals_first_revision_and_prior_reports": "needs_rework",
+    "closed_items": "第 3 项、第 4 项（四项必核已闭环）；其余 18 项保持第一份修订已闭环结论",
+    "user_confirmed": false,
+    "c4_still_pending": true,
+    "registered_at": "2026-11-14T18:17:47+08:00",
+    "registration": "30-状态/W2-雪伦夫人-修订2复核登记-20261114.md"
+  }
+}

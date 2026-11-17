@@ -1,0 +1,38 @@
+{
+  "prompt_sha256": "76dc874e70ac21948bc975c942cfcc6a01982d2bca4ca97ef2861f041acf9517",
+  "requested_model": "claude-opus-5",
+  "effort": "low",
+  "timeout_sec": 180,
+  "outer_launches": 1,
+  "system_prompt": "你是小说写作者。按用户提供的背景和要求创作，直接提交正文。",
+  "base_url": "http://127.0.0.1:15721",
+  "result": {
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_sec": 60.349,
+    "pid": 17728,
+    "termination": null
+  },
+  "comparison": "run02: same original task/system/model alias/effort; appended five constraints; fresh session; no previous draft or Codex rewrite example supplied",
+  "session_id": "9b65fd38-ca50-41e8-a485-7e6f903eac1d",
+  "reported_models": [
+    "claude-opus-5"
+  ],
+  "is_error": false,
+  "characters": 38,
+  "gateway_evidence": [
+    {
+      "request_id": "session:022f5b00-9b7f-4302-8013-c05eaf4ddf8d",
+      "app_type": "claude",
+      "model": "grok-4.7",
+      "request_model": "claude-opus-5",
+      "status_code": 200,
+      "latency_ms": 57980,
+      "first_token_ms": 1741,
+      "input_tokens": 869,
+      "output_tokens": 2430,
+      "session_id": "9b65fd38-ca50-41e8-a485-7e6f903eac1d",
+      "created_at": 1794879815
+    }
+  ]
+}

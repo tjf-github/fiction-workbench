@@ -1,0 +1,122 @@
+{
+  "id": "W1a",
+  "status": "revision_submitted",
+  "attempt": 2,
+  "inputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\10-任务卡\\首批-W1a-世界书§1-6.md",
+      "sha256": "abcdc6423ecdbf546b329a01fe60ceedf0a8fb15bd03956848d3c1c5ceebbdf7"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\输入包\\候选-世界书§1-6.md",
+      "sha256": "cffd9bd3e0c5c28362187d4d304ad01e1834178cb72194eff6026c20ad85f731"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\资料库-新\\10_原本\\诡秘之主-UTF8.txt",
+      "sha256": "4deac8d95fe300415f5210b6e2eb0511f47d30dce948ff93dba65d5e7dedf562"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\20-产出\\W1a\\适用性判断.md",
+      "lines": 51,
+      "chars": 4472,
+      "sha256": "69ffd8509dd75c77530d75e62be44d3eeb997644dca070235aa179c3fc5e0579"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\20-产出\\W1a\\条目表.md",
+      "lines": 131,
+      "chars": 12488,
+      "sha256": "97ec16016ced150156276a98fbf546060b44e1a8784df047e7cb89a91ebdf135"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\20-产出\\W1a\\矛盾清单.md",
+      "lines": 8,
+      "chars": 1044,
+      "sha256": "bf09ab5b823538cc8c6659989c25722407410962c12e4c028470342cb4b78f08"
+    },
+    {
+      "path": "D:\\Pictures\\诡秘归来资料\\_工作区\\产线-20261113\\20-产出\\W1a\\附录-不挂载.md",
+      "lines": 15,
+      "chars": 2083,
+      "sha256": "2fbdc45085275be6e0e3b2d3208a9b5dd28da027a1197045310d54d6cfbdf90d"
+    }
+  ],
+  "reports": [
+    {
+      "path": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W1a.md",
+      "sha256": "f106c12ab965cd20a9851f9a97432da398f48f45b5a8aa8f8857c1269ab2e3f4",
+      "suggested_status": "needs_rework",
+      "at": "2026-11-14T17:23:00+08:00"
+    }
+  ],
+  "open_questions": [
+    "修订候选经独立验收建议 verified（报告 sha256 1fed68bfecd52bb42ce1780d4ad624aa1222aa64988539aa2077c027c4cb3071）；原验收建议 needs_rework 保留；均待用户确认",
+    "矛盾清单 2 条（廷根城市类型；因蒂斯政体沿革）仅并列冲突，待用户裁定，不改作者候选意图",
+    "附录中「旧日活动期」「神弃之地形成时段」维持〔缺〕、待裁定",
+    "保证等级：人工核对，非脚本；脚本全量未做"
+  ],
+  "updated_at": "2026-11-14T17:41:30+08:00",
+  "rework": {
+    "authorized": "证据定位返工（用户 2026-11-14 17:24 授权，不必再问）",
+    "attempt_planned": 2,
+    "card": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/10-任务卡/首批-W1a-返工-证据定位.md",
+    "revision_dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W1a-修订-20261114/",
+    "keep_original_outputs": true,
+    "items": [
+      "原本:L859 第五纪/黑铁纪元 证据错位",
+      "原本:L18260 不灭定律内容在邻行 L18261",
+      "原本:L93056 南大陆超出该行明文"
+    ]
+  },
+  "revision": {
+    "dir": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/20-产出/W1a-修订-20261114/",
+    "prior_suggested_status": "needs_rework",
+    "originals_unchanged": true,
+    "queued_for": "独立验收复核（不插入当前正在验的件）",
+    "files": [
+      {
+        "path": ".../20-产出/W1a-修订-20261114/条目表.md",
+        "sha256": "97bed2d307bf287508a626c09d3a2e70f2637947ee72f0a16d8ef7ce79f2936e",
+        "changed": true,
+        "lines": 131,
+        "bytes": 12528
+      },
+      {
+        "path": ".../20-产出/W1a-修订-20261114/修订说明.md",
+        "sha256": "d10c105934da7e8843f65d396ed6bb4435fcb9879379faacd4bf4abb381e2790",
+        "changed": true,
+        "bytes": 3844
+      },
+      {
+        "path": ".../20-产出/W1a-修订-20261114/适用性判断.md",
+        "sha256": "69ffd8509dd75c77530d75e62be44d3eeb997644dca070235aa179c3fc5e0579",
+        "same_as_original": true,
+        "bytes": 4472
+      },
+      {
+        "path": ".../20-产出/W1a-修订-20261114/矛盾清单.md",
+        "sha256": "bf09ab5b823538cc8c6659989c25722407410962c12e4c028470342cb4b78f08",
+        "same_as_original": true,
+        "bytes": 1044
+      },
+      {
+        "path": ".../20-产出/W1a-修订-20261114/附录-不挂载.md",
+        "sha256": "2fbdc45085275be6e0e3b2d3208a9b5dd28da027a1197045310d54d6cfbdf90d",
+        "same_as_original": true,
+        "bytes": 2083
+      }
+    ],
+    "integrator_filecheck_at": "2026-11-14T17:28:14+08:00",
+    "integrator_note": "整合只核文件存在、哈希、原件未改，并对照原本抽核了 3 条必改及 L1371、L12448；这不是独立验收，不记为 verified。",
+    "re_review": {
+      "path": "/workspace/guimi-cloud-20261114/_工作区/产线-20261113/40-校验/2026-11-14-首批验收/W1a-修订复核.md",
+      "sha256": "1fed68bfecd52bb42ce1780d4ad624aa1222aa64988539aa2077c027c4cb3071",
+      "suggested_status": "verified",
+      "scope": "仅针对修订候选；原件与原报告 needs_rework 不动",
+      "at": "2026-11-14T17:41:30+08:00",
+      "note": "整合只核报告已落盘、哈希与登记一致、原件未改；不是用户确认通过。"
+    }
+  },
+  "revision_acceptance_suggested": "verified"
+}

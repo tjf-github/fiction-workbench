@@ -1,0 +1,38 @@
+{
+  "prompt_sha256": "2d7c01eb6628e69c84955673ac16c9837aeeb447648fff93e8d90fdc9a0a98cc",
+  "requested_model": "claude-opus-5",
+  "effort": "low",
+  "timeout_sec": 180,
+  "outer_launches_this_attempt": 1,
+  "system_prompt": "你是小说写作者。按用户提供的背景和要求创作，直接提交正文。",
+  "base_url": "http://127.0.0.1:15721",
+  "result": {
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_sec": 94.377,
+    "pid": 8384,
+    "termination": null
+  },
+  "comparison": "Same task and five constraints; appended explicit complete-prose delivery request after run03 returned only a planning sentence. Fresh session, no draft/example supplied.",
+  "session_id": "6f00ba5d-7866-410e-b451-555dd438161a",
+  "reported_models": [
+    "claude-opus-5"
+  ],
+  "is_error": false,
+  "characters": 477,
+  "gateway_evidence": [
+    {
+      "request_id": "session:174da959-d157-4dc3-ac98-56f9c4ffc1bc",
+      "app_type": "claude",
+      "model": "grok-4.7",
+      "request_model": "claude-opus-5",
+      "status_code": 200,
+      "latency_ms": 92018,
+      "first_token_ms": 4973,
+      "input_tokens": 901,
+      "output_tokens": 6782,
+      "session_id": "6f00ba5d-7866-410e-b451-555dd438161a",
+      "created_at": 1794879966
+    }
+  ]
+}

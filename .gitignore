@@ -1,0 +1,27 @@
+# Local credentials and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+api_key.txt
+credentials.json
+.codex/
+.agents/
+
+# Editor, OS and temporary files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+~$*
+*.tmp
+*.part
+*.crdownload
+__pycache__/
+
+# Keep unpacked deliveries; avoid duplicate transport archives
+*.zip
+*.7z
+*.rar
