@@ -27,6 +27,7 @@
       "role": "minimal_sensory_and_scene_protocol",
       "template": "W3-场景与物理词表/00-W3场面规程通用模板.md",
       "calibrated_example": "W3-场景与物理词表/W3-推门场-已校准样卡.md",
+      "character_scene_cards_dir": "W3-场景与物理词表/W3-角色出场摩擦样卡",
       "enabled_by_default": true,
       "forbidden_content": ["完整描写范文", "情绪比喻句库", "神态描写句库"]
     },

@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "atlas-export.v1.schema.json",
+  "title": "AtlasExport v1",
+  "description": "narrative-atlas female_characters.py 的 JSON 产物（<输入名>_female_characters.json）。字段来自 README『输出格式』与 素材输出/赤心巡天_female_characters.json 实物。atlas 本身未发布 schema，此为本仓库冻结的消费契约。",
+  "type": "object",
+  "required": [
+    "source",
+    "encoding",
+    "character_count",
+    "characters"
+  ],
+  "properties": {
+    "source": {
+      "type": "string",
+      "description": "输入文件路径（实物为绝对路径）"
+    },
+    "encoding": {
+      "type": "string",
+      "description": "实际读取编码；utf-8(replace) 表示有损，unspecified 不是 codec 名",
+      "enum": [
+        "utf-8",
+        "utf-8-sig",
+        "gb18030",
+        "big5",
+        "utf-16",
+        "utf-16-le",
+        "utf-16-be",
+        "utf-8(replace)",
+        "unspecified"
+      ]
+    },
+    "character_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/character"
+      }
+    },
+    "tool_version": {
+      "type": "string",
+      "description": "可选：atlas 工具版本"
+    },
+    "rules_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "可选：character_rules.json 的 hex sha256"
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "character": {
+      "type": "object",
+      "required": [
+        "name",
+        "aliases",
+        "gender",
+        "gender_confidence",
+        "score",
+        "candidate_score",
+        "mentions",
+        "chapters",
+        "traits",
+        "evidence"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gender": {
+          "type": "string",
+          "description": "实物见 female / protagonist；其余取值待确认"
+        },
+        "gender_confidence": {
+          "type": "number"
+        },
+        "score": {
+          "type": "number",
+          "description": "female_score - male_score"
+        },
+        "candidate_score": {
+          "type": "number"
+        },
+        "mentions": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "姓名+别名字面出现次数之和"
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "description": "0=首个标题前；无标题时全部为 1"
+        },
+        "traits": {
+          "type": "object",
+          "description": "类别→特征词列表，如 性格/身体部位/服饰/身份/关系/外貌",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "evidence": {
+          "type": "object",
+          "description": "类别→原文句子列表；含 gender 等非特征键",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "requested": {
+          "type": "boolean",
+          "description": "仅 --protagonist/--include-name 点名纳入时出现"
+        },
+        "evidence_chapters": {
+          "type": "object",
+          "description": "可选：键同 evidence，值与 evidence 对应键逐条对齐的章节号（0=首个标题前；无标题时为 1）",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "evidence_lines": {
+          "type": "object",
+          "description": "可选：键同 evidence，值与 evidence 对应键逐条对齐的 1-based 原文行号",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

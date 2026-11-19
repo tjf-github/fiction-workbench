@@ -1,0 +1,12 @@
+{
+  "book_id": "gmzz",
+  "book_name": "诡秘之主",
+  "supernatural": {
+    "mode": "on",
+    "system_profile": "gmzz-pathways"
+  },
+  "evidence": {
+    "max_evidence_per_category": 6,
+    "sample_strategy": "earliest_mid_latest"
+  }
+}

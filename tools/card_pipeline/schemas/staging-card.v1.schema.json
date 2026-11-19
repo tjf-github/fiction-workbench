@@ -1,0 +1,344 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "staging-card.v1.schema.json",
+  "title": "StagingCard v1",
+  "description": "待用户确认的卡片。条目级 provenance 沿用 prompt-os phase-0/schemas/context-item.schema.json 的 source.kind / confidence 枚举；body 字段对齐 OpenFic api/schemas/character.py 与 world_info.py。。v1 修订：别名带 basis；atlas 原始指标单独存放；inputs 增加版本锚点。 v1.1（2026-10-30，只加可选/放宽）：sources[].chapter_source、review.reviewed_at、顶层 run_id/book_name、atlas.gender 放宽为字符串。",
+  "type": "object",
+  "required": [
+    "card_version",
+    "card_id",
+    "kind",
+    "title",
+    "items",
+    "inputs",
+    "review"
+  ],
+  "properties": {
+    "card_version": {
+      "const": 1
+    },
+    "card_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "character",
+        "world_entry",
+        "relationship"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "→ OpenFic name（Character/WorldInfoEntry/Relationship 均 1..200）"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "basis"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "basis": {
+            "enum": [
+              "原文",
+              "推断"
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "atlas 合并常出错，默认 basis=推断，人确认后保留"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "description": "卡片正文拆成条目，每条单独标注原文/推断",
+      "items": {
+        "type": "object",
+        "required": [
+          "field",
+          "text",
+          "basis",
+          "sources"
+        ],
+        "properties": {
+          "field": {
+            "type": "string",
+            "description": "如 外貌/性格/身份/关系/经历/设定"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "basis": {
+            "enum": [
+              "原文",
+              "推断"
+            ]
+          },
+          "source_kind": {
+            "enum": [
+              "imported",
+              "observed",
+              "derived",
+              "ai_inferred",
+              "user_stated",
+              "user_confirmed"
+            ],
+            "description": "prompt-os source.kind；原文→imported/observed，推断→derived/ai_inferred"
+          },
+          "confidence": {
+            "enum": [
+              "observed",
+              "confirmed",
+              "inferred",
+              "uncertain"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "description": "原文条目至少一条；推断条目可为空但须说明依据",
+            "items": {
+              "type": "object",
+              "required": [
+                "ref"
+              ],
+              "properties": {
+                "ref": {
+                  "type": "string",
+                  "description": "atlas 产物路径#characters[i].evidence.<类别>[j] 或素材文件路径"
+                },
+                "raw_quote": {
+                  "type": "string"
+                },
+                "chapter": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "仅在从原文另行核实后填写；不得从 atlas chapters 推出"
+                },
+                "chapter_source": {
+                  "enum": [
+                    "atlas",
+                    "verified"
+                  ],
+                  "description": "chapter 来源：atlas=产物 evidence_chapters；verified=人/模型核对原文"
+                },
+                "line": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "可选：1-based 原文行号（优先来自 atlas evidence_lines）"
+                },
+                "line_source": {
+                  "enum": [
+                    "atlas",
+                    "verified"
+                  ],
+                  "description": "line 来源：atlas=产物 evidence_lines；verified=人/模型核对原文"
+                }
+              }
+            }
+          },
+          "protected": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "basis": {
+                  "const": "原文"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "sources": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "relationship": {
+      "type": "object",
+      "description": "kind=relationship 时必填",
+      "required": [
+        "source_name",
+        "target_name"
+      ],
+      "properties": {
+        "source_name": {
+          "type": "string"
+        },
+        "target_name": {
+          "type": "string"
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "required": [
+        "atlas_export",
+        "atlas_export_sha256",
+        "atlas_commit",
+        "atlas_rules_sha256"
+      ],
+      "properties": {
+        "atlas_export": {
+          "type": "string"
+        },
+        "atlas_rules_sha256": {
+          "type": "string"
+        },
+        "prompt_os_run_id": {
+          "type": "string",
+          "description": "prompt-os Vault runs/ 中的 run id"
+        },
+        "model": {
+          "type": "string"
+        },
+        "atlas_export_sha256": {
+          "type": "string"
+        },
+        "atlas_commit": {
+          "type": "string"
+        },
+        "cloud_model_sent": {
+          "type": "boolean",
+          "description": "原文证据是否发给了云端模型（链路约定 §4 例外）"
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "confirmed",
+            "rejected"
+          ]
+        },
+        "confirmed_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "兼容字段：仅 confirmed 时写"
+        },
+        "note": {
+          "type": "string"
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "审定时间，confirmed/rejected 都写"
+        }
+      }
+    },
+    "openfic": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "type": "string"
+        },
+        "pushed_id": {
+          "type": "string"
+        },
+        "pushed_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "description": "暂缓：手工导入 OpenFic 后可选填写，链路不依赖"
+    },
+    "atlas": {
+      "type": "object",
+      "description": "atlas 原始指标，仅供参考，不进 OpenFic 正文",
+      "properties": {
+        "index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "gender": {
+          "type": "string",
+          "description": "atlas 原样取值（现有 female/protagonist，T9-5 后可能扩展）"
+        },
+        "gender_confidence": {
+          "type": "number"
+        },
+        "score": {
+          "type": "number"
+        },
+        "mentions": {
+          "type": "integer"
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "description": "人物级粗定位，不是逐句出处"
+        },
+        "requested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "book_name": {
+      "type": "string"
+    },
+    "novel_type": {
+      "enum": [
+        "story_bible",
+        "character",
+        "relationship",
+        "location",
+        "faction",
+        "world_rule",
+        "timeline_event",
+        "outline",
+        "chapter",
+        "scene",
+        "style_guide",
+        "continuity_issue"
+      ],
+      "description": "可选（链路约定 v3.4，I-2）：prompt-os novel 领域的知识类型；不填不影响校验"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "relationship"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "relationship"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": false
+}

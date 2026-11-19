@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "atlas-feedback.v1.schema.json",
+  "title": "AtlasFeedback v1",
+  "description": "第二段对 atlas 候选的剔除/纠正，经人确认后导出为给 atlas 的建议。只供人工应用，不自动修改 atlas。",
+  "type": "object",
+  "required": [
+    "feedback_version",
+    "atlas_export",
+    "atlas_commit",
+    "atlas_rules_sha256",
+    "entries"
+  ],
+  "properties": {
+    "feedback_version": {
+      "const": 1
+    },
+    "atlas_export": {
+      "type": "string"
+    },
+    "atlas_export_sha256": {
+      "type": "string"
+    },
+    "atlas_commit": {
+      "type": "string"
+    },
+    "atlas_rules_sha256": {
+      "type": "string"
+    },
+    "prompt_os_run_id": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "candidate",
+          "reason",
+          "confirmed"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "reject_not_person",
+              "reject_male",
+              "split_alias",
+              "merge_alias",
+              "rename",
+              "missed"
+            ]
+          },
+          "candidate": {
+            "type": "string",
+            "description": "atlas 中的名字；missed 时为原文中的名字"
+          },
+          "atlas_index": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "alias": {
+            "type": "string",
+            "description": "split_alias/merge_alias 涉及的别名或另一条名字"
+          },
+          "suggested": {
+            "type": "string",
+            "description": "rename 的全名，或建议落点（curation.json / 停用词 / alias_map / 合并守卫反例）"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "judged_by": {
+            "enum": [
+              "model",
+              "human"
+            ]
+          },
+          "quotes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "支持该判断的原文句"
+          },
+          "confirmed": {
+            "type": "boolean",
+            "description": "只有 true 才导出给 atlas"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

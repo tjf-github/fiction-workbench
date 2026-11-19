@@ -33,3 +33,7 @@ __pycache__/
 *.zip
 *.7z
 *.rar
+
+# Local card pipeline runs & staging artifacts
+tools/card_pipeline/staging/
+tools/card_pipeline/output/
