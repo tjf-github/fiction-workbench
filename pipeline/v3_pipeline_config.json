@@ -1,0 +1,78 @@
+{
+  "version": "3.0",
+  "architecture": "four_library_isolation",
+  "libraries": {
+    "W1": {
+      "path": "W1-世界观硬常识",
+      "role": "static_world_rules",
+      "enabled_by_default": true,
+      "forbidden_content": ["长篇原著历史科普", "说明书腔背景长文"]
+    },
+    "W2": {
+      "path": "W2-人物书定稿",
+      "role": "six_section_character_profiles",
+      "template": "W2-人物书定稿/嘉德丽雅-人物书-定稿版.md",
+      "enabled_by_default": true,
+      "required_sections": [
+        "一、基础身份与阶段边界",
+        "二、外貌与衣着物理结构",
+        "三、习惯动作与职业感官",
+        "四、说话指纹与原声标本",
+        "五、关系杠杆与专属面具",
+        "六、人物心理底色与防御边界"
+      ]
+    },
+    "W3": {
+      "path": "W3-场景与物理词表",
+      "role": "minimal_sensory_and_scene_protocol",
+      "template": "W3-场景与物理词表/00-W3场面规程通用模板.md",
+      "calibrated_example": "W3-场景与物理词表/W3-推门场-已校准样卡.md",
+      "enabled_by_default": true,
+      "forbidden_content": ["完整描写范文", "情绪比喻句库", "神态描写句库"]
+    },
+    "X1": {
+      "path": "X1-成年向隔离词表",
+      "role": "adult_high_tension_physical_lexicon",
+      "per_character_files": true,
+      "enabled_by_default": false,
+      "requires_explicit_adult_mode": true,
+      "paired_w2_sections_on_mount": [2, 6]
+    }
+  },
+  "skill": {
+    "name": "non-18plus-fiction-human-voice",
+    "path": "skills/non-18plus-fiction-human-voice/SKILL.md"
+  },
+  "model_routing": {
+    "upstream_assembly": {
+      "executor": "OpenFic / DSH",
+      "responsibility": "仅读取 W1/W2/W3 生成标准《W3 场面卡》，不执笔正文初稿",
+      "filter_script": "scripts/w3_assembly_filter.py",
+      "w2_excerpt_policy": {
+        "forbid_full_w2_injection": true,
+        "min_anchors_per_character": 3,
+        "max_anchors_per_character": 5
+      }
+    },
+    "draft_generation": {
+      "executor": "OpenFic (轻对话客户端配置)",
+      "client_profile": "lightweight_chat_client",
+      "tool_scaffolding": false,
+      "skill_stage": "阶段一：轻客户端极简正向初稿指令"
+    },
+    "sentence_audit": {
+      "executor": "Grok",
+      "model": "grok-4.7",
+      "skill_stage": "阶段二：Grok 句级纯审计指令",
+      "issue_count_range": [3, 6],
+      "require_original_quote": true,
+      "forbid_full_rewrite": true
+    },
+    "local_revision": {
+      "executor": "OpenFic (轻对话客户端配置)",
+      "client_profile": "lightweight_chat_client",
+      "tool_scaffolding": false,
+      "skill_stage": "阶段三：轻客户端局部返修指令"
+    }
+  }
+}

@@ -8,6 +8,8 @@ api_key.txt
 credentials.json
 .codex/
 .agents/
+.claude/
+.runtime/
 
 # Editor, OS and temporary files
 .vscode/
@@ -20,6 +22,12 @@ Desktop.ini
 *.part
 *.crdownload
 __pycache__/
+*.review.json
+*-请求.jsonl
+*-运行.json
+*-会话.json
+*-工具.json
+*-失败.log
 
 # Keep unpacked deliveries; avoid duplicate transport archives
 *.zip
